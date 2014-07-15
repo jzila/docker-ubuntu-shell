@@ -1,6 +1,6 @@
 # Docker container with with simple things for tesing things and things.
 
-FROM ubuntu:13.10
+FROM ubuntu:14.04
 MAINTAINER Matthew Sawasy "sawasy@gmail.com"
 
 # Update repos!
