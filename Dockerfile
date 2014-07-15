@@ -1,7 +1,7 @@
 # Docker container with with simple things for tesing things and things.
 
 FROM ubuntu:14.04
-MAINTAINER Matthew Sawasy "sawasy@gmail.com"
+MAINTAINER John Zila "john@jzila.com"
 
 # Update repos!
 RUN apt-get -q update
@@ -13,9 +13,9 @@ RUN apt-get -qy upgrade
 RUN apt-get install -qy --force-yes zsh git vim
 
 # Add the URL for the repo's tarball as a mount point
-ADD https://github.com/sawasy/oh-my-zsh/tarball/master /
+ADD https://github.com/jzila/oh-my-zsh/tarball/master /
 
 # Untar the repo-slash-mountpoint
-RUN tar -xvf master -C / && mv /sawasy-oh-my-zsh-* /.oh-my-zsh/
+RUN tar -xvf master -C / && mv /jzila-oh-my-zsh-* /.oh-my-zsh/
 # Set us up the bomb!
 ADD ./zshrc /.zshrc
